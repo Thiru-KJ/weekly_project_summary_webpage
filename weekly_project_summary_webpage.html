@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Project Summary</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f5f5f5; }
+    h2 { background: #004080; color: white; padding: 10px; border-radius: 5px; }
+    .section { background: white; padding: 15px; margin-bottom: 20px; border-radius: 5px; box-shadow: 0 0 5px #ccc; }
+    textarea { width: 100%; height: 100px; border-radius: 4px; border: 1px solid #ccc; padding: 10px; font-size: 14px; }
+    button { margin-top: 10px; padding: 8px 16px; background: #004080; color: white; border: none; border-radius: 4px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>Weekly Project Summary</h1>
+
+  <form id="summaryForm">
+    <div class="section">
+      <h2>1. Project Happenings</h2>
+      <textarea name="projectHappenings"></textarea>
+    </div>
+
+    <div class="section">
+      <h2>2. Your Track Status / Client Status Reports</h2>
+      <textarea name="trackStatus"></textarea>
+    </div>
+
+    <div class="section">
+      <h2>3. Org Initiatives</h2>
+      <p><strong>AI (Abarna):</strong></p>
+      <textarea name="aiAbarna"></textarea>
+      <p><strong>AI (Kalpana Sheet):</strong></p>
+      <textarea name="aiKalpana"></textarea>
+    </div>
+
+    <div class="section">
+      <h2>4. Resource Issues / Open Requests / WFH Status</h2>
+      <textarea name="resourceIssues"></textarea>
+    </div>
+
+    <div class="section">
+      <h2>5. Project Monthly Review</h2>
+      <textarea name="monthlyReview"></textarea>
+    </div>
+
+    <div class="section">
+      <h2>6. Job Rotations</h2>
+      <textarea name="jobRotations"></textarea>
+    </div>
+
+    <div class="section">
+      <h2>7. Resource WFH/Leave Status</h2>
+      <textarea name="wfhLeaveStatus"></textarea>
+    </div>
+
+    <div class="section">
+      <h2>8. Invoicing Reconciliations</h2>
+      <textarea name="invoicing"></textarea>
+    </div>
+
+    <div class="section">
+      <h2>9. OKRs</h2>
+      <textarea name="okrs"></textarea>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    document.getElementById('summaryForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Form submitted (functionality can be extended to save data).');
+    });
+  </script>
+</body>
+</html>
